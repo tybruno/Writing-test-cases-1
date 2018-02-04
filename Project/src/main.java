@@ -8,23 +8,23 @@ public class main {
         Triangle scalene = new Triangle(2,10,20);
         Triangle isoscelese = new Triangle(5,5,3);
 
-        ArrayList triangles = new ArrayList();
+        ArrayList<Triangle> triangles = new ArrayList<>();
         triangles.add(equilateral);
         triangles.add(scalene);
         triangles.add(isoscelese);
 
+        for(Triangle t: triangles){
+            print("equilateral",t.checkEquilateral());
+            print("Scalene", t.checkScalene());
+            print("Isosceles",t.checkIsosceles());
+            System.out.println("");
+        }
 
-//        for(int i = 0;i < triangles.size();i++)
-//        {
-//            triangles.get(i). ;
-//
-//            System.out.println(t.checkEquilateral());
-////            System.out.println(triangles.get(i).checkEquilateral());
-////            System.out.println(triangles.get(i).checkscalene());
-////            System.out.println(triangles.get(i).checkisoscelese());
-//
-//        }
+    }
 
+    public static void print(String type,boolean b)
+    {
+        System.out.println(type + ": " +b);
     }
 
 

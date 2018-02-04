@@ -1,3 +1,6 @@
+
+
+
 public class Triangle {
 
     private int x;
@@ -64,4 +67,7 @@ public class Triangle {
     }
 
 
+
 }
+
+
