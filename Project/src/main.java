@@ -3,12 +3,13 @@ import java.util.ArrayList;
 public class main {
 
     public static void main(String[] args) {
-        //assume all values entered are greater than 0
+
         Triangle equilateral = new Triangle(10,10,10);
         Triangle scalene = new Triangle(2,10,20);
         Triangle isoscelese = new Triangle(5,5,3);
 
         ArrayList<Triangle> triangles = new ArrayList<>();
+
         triangles.add(equilateral);
         triangles.add(scalene);
         triangles.add(isoscelese);
