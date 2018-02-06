@@ -120,7 +120,7 @@ public class Triangle {
         return false;
     }
 
-    public boolean checkInput(int x, int y, int z) {
+    public boolean checkInput(int side1, int side2, int side3) {
         /**
          * Check that the side1, side2 , side3 values are valid (greater than 0)
          *
@@ -128,7 +128,7 @@ public class Triangle {
          */
 
         //Check invalid input
-        if (x <= 0 || y <= 0 || z <= 0) {
+        if (side1 <= 0 || side2 <= 0 || side3 <= 0) {
             return false;
         }
 
